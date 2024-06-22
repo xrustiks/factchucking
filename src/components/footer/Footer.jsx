@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div>
-      No rights reserved. Chuck Norris doesn't care about such little things.
+    <div className = "copychuck">
+      All rights belong to Chuck Norris and he lets you use them. Be grateful.
     </div>
   )
 }

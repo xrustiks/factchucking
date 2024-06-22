@@ -3,6 +3,14 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .logo {
@@ -10,25 +18,31 @@
   border-radius: 200px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heart {
+  font-size: 30px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.facts-board {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.card {
-  padding: 2em;
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #7d7c7c;
+  cursor: pointer;
 }
 
-.read-the-docs {
+.press-r {
   color: #888;
+}
+
+.copychuck {
+  font-size: 12px;
 }

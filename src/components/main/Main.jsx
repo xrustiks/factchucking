@@ -1,25 +1,25 @@
+import { useState, useEffect } from 'react';
+
 import FactsBoard from './FactsBoard.jsx';
 
 import GetRandomFact from '../../utils/GetRandomFact.jsx';
 
-import { useState, useEffect } from 'react';
-
-const Main = () => {
+const Main = ({ category }) => {
   const [fact, setFact] = useState('');
 
-  const handleNextJoke = () => {
-    GetRandomFact()
-      .then(nextJoke => {
-        setFact(nextJoke);
+  const handleNextFact = () => {
+    GetRandomFact(category)
+      .then(nextFact => {
+        setFact(nextFact);
       });
   };
 
   useEffect(() => {
-    handleNextJoke();
+    handleNextFact();
 
     const handleKeyPress = (event) => {
-      if (event.key === 'r' || event.key === 'к') {
-        handleNextJoke();
+      if (event.key === 'r' || event.key === 'к') { // for Latin and Cyrillic
+        handleNextFact();
       }
     };
 
@@ -28,17 +28,17 @@ const Main = () => {
     return () => {
       window.removeEventListener('keydown', handleKeyPress);
     };
-  }, [])
+  }, [category])
 
   return (
     <>
       <FactsBoard fact = { fact } />
 
       <div className="refresher">
-        <button onClick={handleNextJoke}>Get next fact</button>
+        <button onClick={handleNextFact}>Get next fact</button>
       </div>
 
-      <p className="read-the-docs">
+      <p className="press-r">
         Click "R" to recieve new fact
       </p>
     </>

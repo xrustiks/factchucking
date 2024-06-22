@@ -1,12 +1,17 @@
 import face from '../../assets/faceofmasculinity.jpg';
 import Categories from './Categories.jsx';
 
-const Header = () => {
+const Header = ({ chooseCategory }) => {
   return (
     <>
-      <Categories />
+      <Categories chooseCategory={chooseCategory} />
 
-      <h1>Chuck Norris facts generator</h1>
+      <nav>
+        <a href="/">Main page</a>
+        <a href="/favorites">Favorites</a>
+      </nav>
+
+      <h2>Chuck Norris facts generator</h2>
 
       <div>
         <a href="./assets/faceofmasculinity.jpg" target="_blank">

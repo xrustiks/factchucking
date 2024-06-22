@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const Categories = () => {
+const Categories = ({ chooseCategory }) => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -9,12 +9,13 @@ const Categories = () => {
       const data = await response.json();
       setCategories(data);
     }
+
     fetchCategories();
   }, [])
 
   return (
     <div>
-      <select>
+      <select onChange={(evt) => chooseCategory(evt.target.value)}>
         <option value="" disabled selected>Choose category</option>
         {categories.map(category => {
           return <option key={category} value={category}>{category}</option>;
