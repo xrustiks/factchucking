@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useFavorites } from '../../hooks/FavoritesContext.jsx';
 
 const FactsBoard = ({ fact }) => {
-  const [favorites, setFavorites] = useState([]);
+  const { favorites, setFavorites } = useFavorites();
 
   const toggleFavorite = (fact) => {
     if (favorites.includes(fact)) {

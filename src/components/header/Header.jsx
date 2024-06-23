@@ -1,14 +1,14 @@
 import face from '../../assets/faceofmasculinity.jpg';
 import Categories from './Categories.jsx';
+import { Link } from 'react-router-dom';
 
 const Header = ({ chooseCategory }) => {
   return (
     <>
-      <Categories chooseCategory={chooseCategory} />
-
       <nav>
-        <a href="/">Main page</a>
-        <a href="/favorites">Favorites</a>
+        <Link to="/">Main page</Link>
+        <Categories chooseCategory={chooseCategory} />
+        <Link to="/favorites">Favorites</Link>
       </nav>
 
       <h2>Chuck Norris facts generator</h2>

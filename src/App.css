@@ -46,3 +46,15 @@ button {
 .copychuck {
   font-size: 12px;
 }
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.remove-favorite {
+  color: red;
+  cursor: pointer;
+}
