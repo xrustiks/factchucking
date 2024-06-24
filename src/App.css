@@ -16,10 +16,35 @@ a {
   color: rgb(85, 85, 85);
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 3px dotted #ccc;
+}
+
+/* Header styles */
 nav {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+
+.select-category {
+  padding: 5px;
+  border: 1px solid rgb(113, 110, 110);
+  border-radius: 20px;
+  background-color: rgb(137, 153, 186);
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin: 10px;
+  border: 4px solid rgb(113, 110, 110);
+  border-radius: 20px;
+  width: 60%;
 }
 
 .logo {
@@ -27,6 +52,7 @@ nav {
   border-radius: 200px;
 }
 
+/* Main styles */
 .heart {
   font-size: 30px;
   cursor: pointer;
@@ -35,10 +61,6 @@ nav {
 .facts-board {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.refresher {
-  
 }
 
 .generate-fact-button {
@@ -50,6 +72,11 @@ nav {
   font-family: inherit;
   background-color: #7d7c7c;
   cursor: pointer;
+}
+
+/* Footer styles */
+.footer {
+
 }
 
 .press-r {
@@ -67,34 +94,18 @@ nav {
   gap: 10px;
 }
 
-.favorite-search-button, .remove-favorite {
-  color: red;
+.favorite-button {
+  color: rgb(85, 84, 84);
   cursor: pointer;
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 200px;
+  
+  margin: 10px auto 0px auto;
 }
 
-/* Search styles */
-input[type="text"] {
-  padding: 5px;
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
 
-.search-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  font-family: inherit;
-  cursor: pointer;
-  padding: 5px;
-  background-color: rgb(71, 70, 70);
-}
 
-ul {
-  list-style-type: none;
-}
 
-li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
+
 

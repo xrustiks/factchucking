@@ -1,4 +1,4 @@
-import { useFavorites } from '../../hooks/FavoritesContext.jsx';
+import { useFavorites } from '../../contexts/FavoritesContext.jsx';
 
 const FactsBoard = ({ fact }) => {
   const { toggleFavorite, isFavorite } = useFavorites();

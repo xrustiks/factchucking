@@ -36,12 +36,8 @@ const Main = ({ category }) => {
       <FactsBoard fact = { fact } />
 
       <div className="refresher">
-        <button className = "generate-fact-button" onClick={handleNextFact}>Get next fact</button>
+        <button className = "button generate-fact-button" onClick={handleNextFact}>Get next fact</button>
       </div>
-
-      <p className="press-r">
-        Click "R" to recieve new fact
-      </p>
     </>
   );
 }

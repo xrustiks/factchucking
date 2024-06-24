@@ -1,4 +1,4 @@
-import { useFavorites } from '../../hooks/FavoritesContext.jsx';
+import { useFavorites } from '../../contexts/FavoritesContext.jsx';
 
 const Favorites = () => {
   const { favorites, toggleFavorite } = useFavorites();
@@ -16,7 +16,7 @@ const Favorites = () => {
           {favorites.map((fact, index) => (
             <li key = {index}>
               {fact}
-              <div className = "remove-favorite" onClick={() => removeFavorite(fact)}>Remove</div>
+              <div className = "button favorite-button" onClick={() => removeFavorite(fact)}>Remove</div>
             </li>
           ))}
         </ul>

@@ -15,7 +15,7 @@ const Categories = ({ chooseCategory }) => {
 
   return (
     <div>
-      <select onChange={(evt) => chooseCategory(evt.target.value)}>
+      <select className = "select-category" onChange={(evt) => chooseCategory(evt.target.value)}>
         <option value="" selected>Choose category</option>
         {categories.map(category => {
           return <option key={category} value={category}>{category}</option>;
