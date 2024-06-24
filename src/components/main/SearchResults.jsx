@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useFavorites } from '../../hooks/FavoritesContext';
+import { useFavorites } from '../../contexts/FavoritesContext';
 
 const SearchResults = () => {
   const location = useLocation();
@@ -42,7 +42,7 @@ const SearchResults = () => {
           {results.map((result, index) => (
             <li key={index}>
               {result.value}
-              <div className = "favorite-search-button" onClick={() => toggleFavorite(result.value)}>
+              <div className = "button favorite-button" onClick={() => toggleFavorite(result.value)}>
                 {isFavorite(result.value) ? 'Remove from Favorites' : 'Add to Favorites'}
               </div>
             </li>

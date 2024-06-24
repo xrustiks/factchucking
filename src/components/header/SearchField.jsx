@@ -24,7 +24,7 @@ const Search = () => {
         type="text"
         onChange={(evt) => setQuery(evt.target.value)} 
         onKeyDown={handleKeyDown}
-        placeholder="Search for fact" 
+        placeholder="Enter keyword and press Enter" 
       />
     </div>
   );
