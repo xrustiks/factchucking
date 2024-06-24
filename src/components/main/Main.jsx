@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import FactsBoard from './FactsBoard.jsx';
 
+
 import GetRandomFact from '../../utils/GetRandomFact.jsx';
 
 const Main = ({ category }) => {
@@ -35,7 +36,7 @@ const Main = ({ category }) => {
       <FactsBoard fact = { fact } />
 
       <div className="refresher">
-        <button onClick={handleNextFact}>Get next fact</button>
+        <button className = "generate-fact-button" onClick={handleNextFact}>Get next fact</button>
       </div>
 
       <p className="press-r">
