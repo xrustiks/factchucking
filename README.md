@@ -1,5 +1,7 @@
 # Chuck Norris facts generator
 
+Deployed here: https://factchaking.netlify.app/
+
 I'm going to make a Chuck Norris facts generator app.  I will use [this](https://api.chucknorris.io/) API for this:
 The application will have an adaptive layout and a minimalistic but stylish design.
 Also there is a requirement to provide company brand/design that will be used. The visual of other companies will not be used, I want to make my own.
