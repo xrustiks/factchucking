@@ -16,7 +16,7 @@ const Categories = ({ chooseCategory }) => {
   return (
     <div>
       <select onChange={(evt) => chooseCategory(evt.target.value)}>
-        <option value="" disabled selected>Choose category</option>
+        <option value="" selected>Choose category</option>
         {categories.map(category => {
           return <option key={category} value={category}>{category}</option>;
         })}
