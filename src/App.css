@@ -9,11 +9,11 @@
 }
 
 button {
-  color: rgb(234, 234, 234);
+  color: rgb(245, 246, 246);
 }
 
 a {
-  color: rgb(85, 85, 85);
+  color: rgb(75, 90, 146);
 }
 
 ul {
@@ -70,7 +70,7 @@ input[type="text"] {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #7d7c7c;
+  background-color: #3c499d;
   cursor: pointer;
 }
 
@@ -103,9 +103,3 @@ input[type="text"] {
   
   margin: 10px auto 0px auto;
 }
-
-
-
-
-
-
