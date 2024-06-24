@@ -67,7 +67,7 @@ nav {
   gap: 10px;
 }
 
-.remove-favorite {
+.favorite-search-button, .remove-favorite {
   color: red;
   cursor: pointer;
 }

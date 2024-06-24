@@ -1,10 +1,10 @@
 import { useFavorites } from '../../hooks/FavoritesContext.jsx';
 
 const Favorites = () => {
-  const { favorites, setFavorites } = useFavorites();
+  const { favorites, toggleFavorite } = useFavorites();
 
   const removeFavorite = (fact) => {
-    setFavorites(favorites.filter(item => item !== fact));
+    toggleFavorite(fact);
   };
 
   return (
