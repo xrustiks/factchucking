@@ -17,16 +17,6 @@ const Footer = () => {
           All rights belong to Chuck Norris and he lets you use them. Be
           grateful.
         </div>
-
-        <div className="subscribe">
-          <input
-            className="subscribe-input"
-            type="text"
-            placeholder="Enter your email"
-          />
-
-          <div class="subscribe-button">Subscribe</div>
-        </div>
       </div>
     </div>
   );

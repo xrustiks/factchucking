@@ -99,31 +99,3 @@ nav {
 
   margin: 10px auto 0px auto;
 }
-
-.subscribe-input {
-  padding: 5px;
-  margin: 5px;
-  border: 1px solid rrgb(3, 3, 3);
-  border-radius: 10px;
-  width: 10%;
-}
-
-.subscribe {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.subscribe-button {
-  background-color: rgb(156, 161, 180);
-
-  color: white;
-  font-size: 10px;
-
-  border: 1px solid black;
-  border-radius: 10px;
-
-  padding: 5px;
-
-  cursor: pointer;
-}
