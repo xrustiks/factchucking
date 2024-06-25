@@ -57,6 +57,10 @@ nav {
   width: 60%;
 }
 
+.title .chucking {
+  color: brown;
+}
+
 .chuck-picture img {
   width: 150px;
   border-radius: 200px;

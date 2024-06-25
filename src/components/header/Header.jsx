@@ -27,7 +27,7 @@ const Header = ({ chooseCategory }) => {
       {!isFavoritesPage && <Search />}
 
       <div className="title">
-        <h2>Fact<font color="brown">Chucking</font></h2>
+        <h2>Fact<span className="chucking">Chucking</span></h2>
         <p>Chuck Norris facts generator</p>
       </div>
 
