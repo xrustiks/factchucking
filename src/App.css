@@ -133,6 +133,10 @@ nav {
     margin-top: 20px;
   }
 
+  .press-r {
+    display: none;
+  }
+
   .copychuck {
     display: none;
   }
