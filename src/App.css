@@ -5,7 +5,9 @@
   text-align: center;
 
   padding: 10px;
+}
 
+* {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -15,6 +17,7 @@ button {
 
 a {
   color: rgb(75, 90, 146);
+  text-decoration: none;
 }
 
 ul {
@@ -106,7 +109,7 @@ nav {
 }
 
 /* Media queries */
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   .search-input {
     margin-bottom: 0px;
   }
@@ -122,6 +125,18 @@ nav {
   .title p {
     margin-top: 2px;
   }
+
+  .press-r {
+    display: none;
+  }
+
+  .copychuck {
+    display: none;
+  }
+
+  #root {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -131,13 +146,5 @@ nav {
 
   .chuck-picture {
     margin-top: 20px;
-  }
-
-  .press-r {
-    display: none;
-  }
-
-  .copychuck {
-    display: none;
   }
 }

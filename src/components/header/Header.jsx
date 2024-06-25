@@ -17,11 +17,11 @@ const Header = ({ chooseCategory }) => {
       </div>
 
       <nav>
-        <Link to="/">Main page</Link>
+        <Link to="/">⟪ Main page</Link>
         {!isFavoritesPage && !isSearchResultsPage && (
           <Categories chooseCategory={chooseCategory} />
         )}
-        <Link to="/favorites">Favorites</Link>
+        <Link to="/favorites">Favorites ⟫</Link>
       </nav>
 
       {!isFavoritesPage && <Search />}
