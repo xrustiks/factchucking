@@ -1,4 +1,4 @@
-import { useFavorites } from '../../contexts/FavoritesContext.jsx';
+import { useFavorites } from "../../contexts/FavoritesContext.jsx";
 
 const Favorites = () => {
   const { favorites, toggleFavorite } = useFavorites();
@@ -8,15 +8,20 @@ const Favorites = () => {
   };
 
   return (
-    <div class = 'favorites'>
+    <div class="favorites">
       <h2>Favorites</h2>
 
       {favorites.length > 0 ? (
-        <ul className = "favorites-list">
+        <ul className="favorites-list">
           {favorites.map((fact, index) => (
-            <li key = {index}>
+            <li key={index}>
               {fact}
-              <div className = "button favorite-button" onClick={() => removeFavorite(fact)}>Remove</div>
+              <div
+                className="button favorite-button"
+                onClick={() => removeFavorite(fact)}
+              >
+                Remove
+              </div>
             </li>
           ))}
         </ul>
@@ -25,6 +30,6 @@ const Favorites = () => {
       )}
     </div>
   );
-}
+};
 
 export default Favorites;
