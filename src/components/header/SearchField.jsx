@@ -1,4 +1,3 @@
-// Search.jsx
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -20,11 +19,12 @@ const Search = () => {
 
   return (
     <div>
-      <input 
-        type="text"
-        onChange={(evt) => setQuery(evt.target.value)} 
-        onKeyDown={handleKeyDown}
-        placeholder="Enter keyword and press Enter" 
+      <input
+        className = "search-input"
+        type = "text"
+        onChange = {(evt) => setQuery(evt.target.value)} 
+        onKeyDown = {handleKeyDown}
+        placeholder = "Enter keyword and press Enter" 
       />
     </div>
   );
