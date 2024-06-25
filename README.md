@@ -1,8 +1,8 @@
-# Chuck Norris facts generator
+# FactChucking
 
 Deployed here: https://factchaking.netlify.app/
 
-FactChacking is a Chuck Norris facts generator app.  [This](https://api.chucknorris.io/) API was used.
+FactChucking is a Chuck Norris facts generator app.  [This](https://api.chucknorris.io/) API was used.
 
 Here what this app can do:
 1. A random joke is displayed on the main page (using this [link](https://api.chucknorris.io/jokes/random) in API).
