@@ -5,7 +5,7 @@
   padding: 2rem;
   text-align: center;
 
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {
@@ -96,7 +96,7 @@ nav {
   border: 1px black solid;
   border-radius: 10px;
   width: 200px;
-  
+
   margin: 10px auto 0px auto;
 }
 
@@ -106,7 +106,6 @@ nav {
   border: 1px solid rrgb(3, 3, 3);
   border-radius: 10px;
   width: 10%;
-  
 }
 
 .subscribe {
@@ -116,12 +115,12 @@ nav {
 }
 
 .subscribe-button {
-  background-color: rgb(141, 125, 125);
+  background-color: rgb(156, 161, 180);
 
   color: white;
   font-size: 10px;
 
-  border: 1px solid rgb(3, 3, 3);
+  border: 1px solid black;
   border-radius: 10px;
 
   padding: 5px;

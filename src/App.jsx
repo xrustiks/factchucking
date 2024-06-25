@@ -1,17 +1,17 @@
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Footer from './components/footer/Footer.jsx';
-import Main from './components/main/Main.jsx';
-import Header from './components/header/Header.jsx';
-import Favorites from './components/main/Favorites.jsx';
-import { FavoritesProvider } from './contexts/FavoritesContext.jsx';
-import SearchResults from './components/main/SearchResults.jsx';
+import Footer from "./components/footer/Footer.jsx";
+import Main from "./components/main/Main.jsx";
+import Header from "./components/header/Header.jsx";
+import Favorites from "./components/main/Favorites.jsx";
+import { FavoritesProvider } from "./contexts/FavoritesContext.jsx";
+import SearchResults from "./components/main/SearchResults.jsx";
 
-import './App.css';
+import "./App.css";
 
 function App() {
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState("");
 
   return (
     <FavoritesProvider>
@@ -19,9 +19,9 @@ function App() {
         <Header chooseCategory={setCategory} />
 
         <Routes>
-          <Route path="/" element={ <Main category={category} /> } />
-          <Route path="/favorites" element={ <Favorites /> } />
-          <Route path="/search" element={ <SearchResults /> } />
+          <Route path="/" element={<Main category={category} />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/search" element={<SearchResults />} />
         </Routes>
 
         <Footer />
