@@ -20,8 +20,8 @@ const Main = ({ category }) => {
     handleNextFact();
 
     const handleKeyPress = (event) => {
+      // for Latin and Cyrillic keyboard layout
       if (event.key === "r" || event.key === "к") {
-        // for Latin and Cyrillic
         handleNextFact();
       }
     };
