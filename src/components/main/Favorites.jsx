@@ -8,7 +8,7 @@ const Favorites = () => {
   };
 
   return (
-    <div class="favorites">
+    <div className="favorites">
       <h2>Favorites</h2>
 
       {favorites.length > 0 ? (
